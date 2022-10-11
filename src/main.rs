@@ -45,7 +45,7 @@ fn login(username: &str, password: &str) -> io::Result<()> {
     let query_string = urlencoding::encode(query_string);
 
     let body = format!(
-        "userId={}&password={}&service=&queryString={}&passwordEncrypt=false",
+        "userId={}&password={}&service=&queryString={}&operatorPwd=&operatorUserId=&validcode=&passwordEncrypt=false",
         username, password, query_string
     );
 
